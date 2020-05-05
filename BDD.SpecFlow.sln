@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.SpecFlow.Tests", "BDD.SpecFlow.Tests\BDD.SpecFlow.Tests.csproj", "{7DB35994-F0A7-4C75-99D1-B73B5A4096A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9154502-CD30-4C0D-B600-BDD77327FF0E} = {A9154502-CD30-4C0D-B600-BDD77327FF0E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.SpecFlow.Apps", "BDD.SpecFlow.Apps\BDD.SpecFlow.Apps.csproj", "{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5} = {1A4BE3BE-965C-416A-93BD-5E55B950DCA5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.SpecFlow.Utils", "BDD.SpecFlow.Utils\BDD.SpecFlow.Utils.csproj", "{1A4BE3BE-965C-416A-93BD-5E55B950DCA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.SpecFlow.PageObjects", "BDD.SpecFlow.PageObjects\BDD.SpecFlow.PageObjects.csproj", "{13A24BE3-6C72-41B1-BC22-C334BCFED2B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5} = {1A4BE3BE-965C-416A-93BD-5E55B950DCA5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.SpecFlow.Steps", "BDD.SpecFlow.Steps\BDD.SpecFlow.Steps.csproj", "{A9154502-CD30-4C0D-B600-BDD77327FF0E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0} = {F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5} = {1A4BE3BE-965C-416A-93BD-5E55B950DCA5}
+		{13A24BE3-6C72-41B1-BC22-C334BCFED2B0} = {13A24BE3-6C72-41B1-BC22-C334BCFED2B0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DB35994-F0A7-4C75-99D1-B73B5A4096A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB35994-F0A7-4C75-99D1-B73B5A4096A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB35994-F0A7-4C75-99D1-B73B5A4096A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB35994-F0A7-4C75-99D1-B73B5A4096A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A0E72D-0B06-4CEB-BCDA-D337098DC7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4BE3BE-965C-416A-93BD-5E55B950DCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A24BE3-6C72-41B1-BC22-C334BCFED2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A24BE3-6C72-41B1-BC22-C334BCFED2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A24BE3-6C72-41B1-BC22-C334BCFED2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A24BE3-6C72-41B1-BC22-C334BCFED2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9154502-CD30-4C0D-B600-BDD77327FF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9154502-CD30-4C0D-B600-BDD77327FF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9154502-CD30-4C0D-B600-BDD77327FF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9154502-CD30-4C0D-B600-BDD77327FF0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF9E4CBB-277E-4784-9F48-0CCC34E5DB6D}
+	EndGlobalSection
+EndGlobal
